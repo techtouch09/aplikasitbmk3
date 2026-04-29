@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyNav Pro | Toolbox Meeting Navigator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="login-screen" class="overlay">
+        <div class="login-decor-circle"></div>
+        
+        <div class="login-card">
+            <div class="ak3u-container">
+                <div class="ak3u-logo">
+                    <i class="fas fa-gear fa-spin-slow"></i>
+                    <div class="ak3u-text">AK3U</div>
+                </div>
+            </div>
+
+            <div class="login-brand">
+                
+                
+                <h2>SAFETY<span>NAV</span> PRO</h2>
+                <div class="brand-divider"></div>
+                <p>Advanced TBM Management System</p>
+            </div>
+    
+            <form id="login-form">
+                <div class="input-wrapper">
+                    <label>Authorized Personnel Only</label>
+                    <div class="input-field">
+                        <i class="fas fa-user-shield"></i>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                    </div>
+                </div>
+    
+                <div class="input-wrapper">
+                    <label>Security Key</label>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+    
+                <button type="submit" class="btn-glow">
+                    <span>SECURE LOGIN</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+    
+            <div class="login-features">
+                <span><i class="fas fa-check-double"></i> SMK3 Compliant</span>
+                <span><i class="fas fa-sync"></i> Auto-Sync</span>
+            </div>
+    
+            <div class="login-footer">
+                <p>&copy; 2026 Professional Safety Tool</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-app" class="hidden">
+        <header>
+            <div class="header-container">
+                <div class="app-logo">
+                    <i class="fas fa-helmet-safety"></i> <span>SAFETY<b>NAV</b></span>
+                </div>
+                
+                <div class="header-nav">
+                    <div class="dropdown">
+                        <button class="menu-pill" id="menu-trigger">
+                            <i class="fas fa-bars"></i>
+                            <span id="label-jadwal">Pilih Materi</span>
+                        </button>
+                        <div class="dropdown-content" id="menu-list"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="content-area">
+                <section class="dashboard-hero animate-in">
+                    <div class="welcome-text">
+                        <div class="badge-ak3u-main">
+                            <i class="fas fa-certificate"></i> Verified Ahli K3 Umum
+                        </div>
+                        <h1>Selamat Pagi, <span>Safety Leader</span>!</h1>
+                        <p>Monitoring kepatuhan dan materi Toolbox Meeting secara real-time berdasarkan standar regulasi nasional.</p>
+                    </div>
+        
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-calendar-check"></i>
+                            <div class="stat-info">
+                                <h3>24 Hari</h3>
+                                <p>Materi Standar SMK3</p>
+                            </div>
+                        </div>
+                        <div class="stat-card accent-card">
+                            <i class="fas fa-scale-balanced"></i>
+                            <div class="stat-info">
+                                <h3>AK3U</h3>
+                                <p>Regulatory Compliance</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-heart-pulse"></i>
+                            <div class="stat-info">
+                                <h3>Zero</h3>
+                                <p>Accident Goal</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="law-reference-card">
+                        <div class="law-header">
+                            <i class="fas fa-book-bookmark"></i>
+                            <h4>Landasan Hukum & Kepatuhan K3</h4>
+                        </div>
+                        
+                        <div class="law-detail-grid">
+                            <div class="law-category">
+                                <div class="category-title">Pilar Utama (SMK3)</div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">UU No. 1/1970</span>
+                                    <p>Keselamatan Kerja (Dasar Utama)</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">PP No. 50/2012</span>
+                                    <p>Penerapan Sistem Manajemen K3</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">UU No. 13/2003</span>
+                                    <p>Ketenagakerjaan (Pasal 86 & 87)</p>
+                                </div>
+                            </div>
+        
+                            <div class="law-category">
+                                <div class="category-title">Norma Teknis & Lingkungan</div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Permenaker 5/2018</span>
+                                    <p>K3 Lingkungan Kerja (Fisika, Kimia, Ergonomi)</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Permenaker 8/2020</span>
+                                    <p>K3 Pesawat Angkat & Angkut</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Permenaker 9/2016</span>
+                                    <p>K3 Bekerja di Ketinggian (WAH)</p>
+                                </div>
+                            </div>
+        
+                            <div class="law-category">
+                                <div class="category-title">Proteksi & Penunjang</div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Permenaker 12/2015</span>
+                                    <p>Keselamatan Listrik di Tempat Kerja</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Kepmenaker 186/1999</span>
+                                    <p>Unit Penanggulangan Kebakaran</p>
+                                </div>
+                                <div class="law-item-detail">
+                                    <span class="law-tag">Permenaker 4/1987</span>
+                                    <p>Kelembagaan P2K3 & Ahli K3 Umum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="alert-box">
+                        <div class="alert-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="alert-text">
+                            <strong>Kepatuhan Regulasi:</strong>
+                            Seluruh materi Toolbox Meeting dalam sistem ini telah disesuaikan dengan kurikulum pembinaan **Ahli K3 Umum** untuk memastikan validitas data di lapangan.
+                        </div>
+                    </div>
+        
+                    <div class="promo-grid">
+                        <div class="promo-item">
+                            <i class="fas fa-file-signature"></i>
+                            <h4>Audit Ready</h4>
+                            <p>Memudahkan pelaporan SMK3 untuk kebutuhan audit internal/eksternal.</p>
+                        </div>
+                        <div class="promo-item">
+                            <i class="fas fa-ship"></i>
+                            <h4>Shipyard Optimized</h4>
+                            <p>Mencakup regulasi ruang terbatas dan pekerjaan panas (Hot Work).</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="fab-container">
+            <button class="fab-main" onclick="logout()">
+                <i class="fas fa-power-off"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
